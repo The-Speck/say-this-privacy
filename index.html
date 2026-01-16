@@ -313,8 +313,15 @@
       </section>
 
       <footer>
-        <p>&copy; 2026 Say This. All rights reserved.</p>
+        <p>
+          &copy; <span id="current-year">2026</span> Say This. All rights
+          reserved.
+        </p>
       </footer>
     </div>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
